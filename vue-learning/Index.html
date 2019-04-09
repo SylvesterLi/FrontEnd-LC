@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sangyu Li VUE-Learning</title>
+    <script src="./lib/vue.js"></script>
+    <style>
+    [v-cloak]{
+        display: none
+    }
+
+    .active{
+        font-weight: bold,
+        
+
+    }
+    </style>
+</head>
+<body>
+
+    
+<!-- 
+    <div id="app">
+        <p :class="" style="color: red">{{ nowDate }}</p> -->
+        <!--双向绑定 就是上面写一个 下面data写一个 一个中间商转接-->
+    <!-- </div>
+    <input v-model="nowDate"> -->
+
+    <!-- <div id="app"> -->
+        <!-- <p v-for='(val,key) in userInfo'>{{val}}-----{{key}}</p> -->
+        <!-- <p v-for='item in users'>{{item.name}}----{{item.age}}</p>
+    </div> -->
+
+
+    <div id="app1">
+        <input type="button" value="Add" @click="add">
+        <p v-for='item in alist'>
+            <input type="checkbox" v-model='item.aCheck'> 姓名：{{item.aName}}--索引：{{item.aIndex}}</p>
+    </div>
+
+
+    <script>
+        //VM实例
+    //    var vm= new Vue(
+    //         {
+    //             el:'#app',
+    //             data:{
+    //                 msg:'Hello World',
+    //                 message:'233',
+    //                 nowDate:'Hello'+new Date().toLocaleTimeString(),
+    //                 userInfo:{
+    //                     usrName:'Tony',
+    //                     gender:'男',
+    //                     age:'21'
+    //                 },
+    //                 users:[{name:"1qeqw",age:"23"},
+    //                 {name:"wq22",age:"11"},
+    //                 {name:"yugb33",age:"23"}
+    //             ]
+    //         },
+    //             methods:{
+    //                 divHandler(){
+    //                     console.log('触发btn的事件')
+    //                 },
+    //                 linkClick(){
+    //                     console.log('这是linkClick')
+    //                 }
+    //             }
+    //         }
+    //     )
+        
+        var vm1=new Vue(
+            {
+                el:"#app1",
+                data:{
+                    aCheck:false,
+                    alist:[
+                        {aName:'MS-1',aIndex:'1-1',aCheck:true},
+                        {aName:'MS-2',aIndex:'1-2',aCheck:false},
+                        {aName:'MS-3',aIndex:'1-3',aCheck:true}
+                    ]
+                },
+                methods:{
+                    add(){
+                       
+                        this.alist.push({aName:'aaa',aIndex:'adad',aCheck:true})
+                        
+                    }
+
+                }
+
+
+            }
+        )
+        
+    </script>
+    tswsslxxb
+</body>
+</html>
+
+
