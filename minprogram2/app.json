@@ -16,18 +16,18 @@
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "ICONS/books.png",
-        "selectedIconPath": "ICONS/idea.png"
+        "selectedIconPath": "ICONS/books-color.png"
       },
       {
         "pagePath": "pages/Tabs/Tab1",
         "text": "Tab1",
-        "iconPath": "ICONS/idea.png",
-        "selectedIconPath": "ICONS/books.png"
+        "iconPath": "ICONS/gattia-gray.png",
+        "selectedIconPath": "ICONS/gattia.png"
       },
       {
         "pagePath": "pages/logs/logs",
         "text": "LOGS",
-        "iconPath": "ICONS/books.png",
+        "iconPath": "ICONS/idea-gray.png",
         "selectedIconPath": "ICONS/idea.png"
       }
     ]

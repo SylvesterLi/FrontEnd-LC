@@ -1,2 +1,7 @@
-<!--pages/Tabs/Tab1.wxml-->
-<text>pages/Tabs/Tab1.wxml</text>
+<view >
+这是谁的第一个小程序？
+</view>
+<view >
+当然是{{userName}}的了
+
+</view>

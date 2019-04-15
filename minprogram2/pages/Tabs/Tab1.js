@@ -5,6 +5,10 @@ Page({
    * Page initial data
    */
   data: {
+    //这里声明变量
+    userName:"Sny",
+    userAge:"18",
+    userGender:"Male"
 
   },
 
