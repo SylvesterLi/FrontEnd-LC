@@ -4,4 +4,11 @@
 <view >
 当然是{{userName}}的了
 
+
+</view>
+<view >
+Age:{{userAge}}
+</view>
+<view >
+Gender:{{userGender}}
 </view>
