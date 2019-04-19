@@ -18,7 +18,7 @@
         </view>
         <!-- 访问官网button -->
         <view class="downApp" style="margin-left:10rpx;">
-            下載App
+            下载App
         </view>
    
     </view>

@@ -2,3 +2,11 @@
     <headerTop>
     </headerTop>
 </view>
+<view >
+    <scroll-view class="scrollView" scroll-x>
+        <view bindtap="navTap" data-index="{{index}}" class="navList {{index===selectNav?'active':''}}" 
+         wx:for="{{navList}}" wx:key="{{index}}">
+            {{item.text}}
+        </view>
+    </scroll-view>
+</view>

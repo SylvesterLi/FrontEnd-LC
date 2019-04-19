@@ -1,22 +1,15 @@
-/**index.wxss**/
-.userinfo,.textClass {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.scrollView{
+  white-space: nowrap;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.navList{
+  padding: 20rpx;
+  display: inline-block;
+  font-weight: lighter;
+  
 }
 
-.userinfo-nickname {
-  color: #aaa;
-}
+.navList.active{
+  border-bottom: 5rpx solid palevioletred;
 
-.usermotto {
-  margin-top: 200px;
 }
-

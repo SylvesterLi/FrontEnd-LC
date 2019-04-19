@@ -4,15 +4,59 @@ Page({
    * 页面的初始数据
    */
   data: {
-    hello:'hie'
+    selectNav:0,
+    navList:[],
     
   },
+
+/**
+ * https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/
+ * request请求
+ * navList
+ * swiperList
+ * videoList
+ * videoDetail?id 都需要带上id
+ * othersList?id
+ * commentsList?id
+ */
+  getRequest(){
+    let that=this;
+    wx.request({
+      url:"https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/navList",
+      success(res){
+        if(res.data.code=='0')
+        {
+          //console.log(res.data.data.navList[1])
+          that.setData({
+            navList:res.data.data.navList
+          })
+        }
+        
+      }
+
+    })
+  },
+
+  /**
+   * 
+   * BindTap
+   * 如果data-index不写，则e.target.dataset.index为undefined
+   */
+  navTap(e){
+    this.setData({
+      selectNav:e.target.dataset.index
+    })
+    //console.log()
+  },
+
+
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    this.getRequest()
   },
 
   /**
