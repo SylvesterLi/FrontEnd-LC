@@ -7,7 +7,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "GattiaSu LabPreview",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh":true
   },
@@ -21,7 +21,7 @@
       },
       {
         "pagePath": "pages/Tabs/Tab1",
-        "text": "Tab1",
+        "text": "SNY",
         "iconPath": "ICONS/gattia-gray.png",
         "selectedIconPath": "ICONS/gattia.png"
       },

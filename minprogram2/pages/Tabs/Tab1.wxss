@@ -1,1 +1,11 @@
-/* pages/Tabs/Tab1.wxss */
+.inputSets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo,.textClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "headerTop":"../../components/headerTop/headerTop"
+  },
+  "navigationBarTitleText":"佳蒂亚树Mini"
+
 }

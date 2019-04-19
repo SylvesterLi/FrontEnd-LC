@@ -1,14 +1,5 @@
-<view >
-这是谁的第一个小程序？
-</view>
-<view >
-当然是{{userName}}的了
 
+<view>
+    <input class="inputSets" type="text" auto-focus="{{true}}" placeholder="input here" />
 
-</view>
-<view >
-Age:{{userAge}}
-</view>
-<view >
-Gender:{{userGender}}
 </view>

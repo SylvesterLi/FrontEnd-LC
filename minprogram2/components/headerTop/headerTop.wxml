@@ -1,0 +1,17 @@
+<view class="allCenter">
+    <!-- logo -->
+    <view class="biliLogo">
+        <image  src="../../ICONS/biliLogo.png" />
+    </view>
+    <!-- 文本输入框 -->
+    <view class="" >
+        <image src="" />
+    </view>
+      
+    <!-- 搜索icon -->
+    <!-- 头像 -->
+    <!-- 访问官网button -->
+   
+
+        <slot></slot>
+</view>

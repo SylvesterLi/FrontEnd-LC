@@ -1,0 +1,22 @@
+.cusTextArea{
+    border: 1px;
+    
+    
+
+}
+
+.biLogo{
+    width: 3rem;
+    background-color: pink
+    
+}
+
+.searchInput{
+    border: 0.5rem
+}
+
+.allCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

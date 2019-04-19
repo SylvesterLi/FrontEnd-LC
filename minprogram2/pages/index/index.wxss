@@ -1,5 +1,5 @@
 /**index.wxss**/
-.userinfo {
+.userinfo,.textClass {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,3 +19,4 @@
 .usermotto {
   margin-top: 200px;
 }
+
