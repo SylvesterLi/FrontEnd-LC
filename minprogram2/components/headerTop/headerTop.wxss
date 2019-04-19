@@ -1,22 +1,50 @@
-.cusTextArea{
-    border: 1px;
-    
-    
-
+.biliLogo{
+    flex: 7;
+    margin: 10rpx;
+    width:140rpx;
+    height:50rpx;
 }
 
-.biLogo{
-    width: 3rem;
-    background-color: pink
-    
-}
-
-.searchInput{
-    border: 0.5rem
-}
-
-.allCenter{
+.search_icon{
     display: flex;
-    flex-direction: column;
+    flex: 1;
+    justify-content: center;
     align-items: center;
+    width: 50rpx;
+    height: 50rpx;
+    padding: 10rpx;
 }
+
+.userIcon{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rpx;
+    height: 50rpx;
+    padding: 10rpx;
+}
+
+.allComponets{
+    display: flex;
+    align-items: center;
+    margin: 10rpx;
+
+}
+
+.downApp{
+    display: flex;
+    flex: 1.5;
+    font-size: 30rpx;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    color: #fff;
+    border-radius: 10rpx;
+    padding: 10rpx;
+
+}
+
+
+
+

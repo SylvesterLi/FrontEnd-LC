@@ -1,17 +1,26 @@
-<view class="allCenter">
-    <!-- logo -->
-    <view class="biliLogo">
-        <image  src="../../ICONS/biliLogo.png" />
-    </view>
-    <!-- 文本输入框 -->
-    <view class="" >
-        <image src="" />
-    </view>
-      
-    <!-- 搜索icon -->
-    <!-- 头像 -->
-    <!-- 访问官网button -->
-   
+<view style="padding:10rpx">
+    <view class="allComponets">
+        <!-- logo -->
+        <navigator >
+            <image class="biliLogo" src="../../ICONS/biliLogo.png" />
+        </navigator>
+        <!-- 文本输入框 先不慌做 -->
+        
+        <view style="display:flex;flex:3"></view>
+        <!-- 搜索icon -->
+        <view >
+            <image class="search_icon" src="../../ICONS/search.png" />
+        </view>
 
-        <slot></slot>
+        <!-- 头像 -->
+        <view >
+            <image class="userIcon" src="../../ICONS/avatar.png" />
+        </view>
+        <!-- 访问官网button -->
+        <view class="downApp" style="margin-left:10rpx;">
+            下載App
+        </view>
+   
+    </view>
+    <slot></slot>
 </view>
