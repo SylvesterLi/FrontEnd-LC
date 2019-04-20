@@ -1,12 +1,25 @@
 <view>
-    <headerTop>
-    </headerTop>
+  <view>
+      <headerTop>
+      </headerTop>
+  </view>
+  <view >
+      <scroll-view class="scrollView" scroll-x>
+          <view bindtap="navTap" data-index="{{index}}" class="navList {{index===selectNav?'active':''}}" 
+          wx:for="{{navList}}" wx:key="{{index}}">
+              {{item.text}}
+          </view>
+      </scroll-view>
+  </view>
+  <view >
+      <swiper style="height:230rpx" autoplay indicator-dots duration="200" circular>
+          <swiper-item wx:for="{{swiperList}}" wx:key="{{index}}">
+              <navigator class="swiperNav">
+                  <image class="swiperImage" mode="widthFix" src="{{item.imgSrc}}"></image>
+
+              </navigator>
+          </swiper-item>
+      </swiper>
+  </view>
 </view>
-<view >
-    <scroll-view class="scrollView" scroll-x>
-        <view bindtap="navTap" data-index="{{index}}" class="navList {{index===selectNav?'active':''}}" 
-         wx:for="{{navList}}" wx:key="{{index}}">
-            {{item.text}}
-        </view>
-    </scroll-view>
-</view>
+  
