@@ -1,8 +1,10 @@
 <view>
+  <!-- 自定义组件 标准头部 -->
   <view>
       <headerTop>
       </headerTop>
   </view>
+  <!-- 滑动的导航栏 -->
   <view >
       <scroll-view class="scrollView" scroll-x>
           <view bindtap="navTap" data-index="{{index}}" class="navList {{index===selectNav?'active':''}}" 
@@ -11,6 +13,7 @@
           </view>
       </scroll-view>
   </view>
+  <!-- 轮播图 -->
   <view >
       <swiper style="height:230rpx" autoplay indicator-dots duration="200" circular>
           <swiper-item wx:for="{{swiperList}}" wx:key="{{index}}">
@@ -21,5 +24,17 @@
           </swiper-item>
       </swiper>
   </view>
+
+  <!-- 视频 -->
+  <view wx:for="{{videosList}}" wx:key="index" >
+    <image mode="widthFix" src="{{item.imgSrc}}" style="width:200rpx"/>
+    <text >{{item.desc}}</text>
+
+  </view>
+
+
+
+
+
 </view>
   

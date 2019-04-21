@@ -7,7 +7,7 @@ Page({
     selectNav:0,
     navList:[],
     swiperList:[],
-    
+    videosList:[],
   },
 
 /**
@@ -59,7 +59,7 @@ Page({
     wx.request({
       url:"https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/swiperList",
       success(res){
-        console.log(res);
+        //console.log(res);
         if(res.data.code===0)
         that.setData({
           swiperList:res.data.data.swiperList
@@ -70,6 +70,21 @@ Page({
 
   },
 
+  getVideosList(){
+    let that = this;
+    wx.request({
+      url:"https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/videosList",
+      success(res){
+        //console.log(res);
+        if(res.data.code===0)
+        {
+          that.setData({
+            videosList:res.data.data.videosList
+          })
+        }
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -77,6 +92,7 @@ Page({
   onLoad: function (options) {
     this.getRequest();
     this.getSwiper();
+    this.getVideosList();
   },
 
   /**
