@@ -1,4 +1,4 @@
 <view>
-Hello
+  <button class="weui-btn" type="primary">Click</button>
+  <button class='weui-btn' type='warn'>警告</button>
 </view>
-
