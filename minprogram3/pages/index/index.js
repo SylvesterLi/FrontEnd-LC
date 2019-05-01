@@ -3,8 +3,8 @@ Page({
       showTopTips: false,
 
       radioItems: [
-          {name: 'cell standard', value: '0'},
-          {name: 'cell standard', value: '1', checked: true}
+          {name: '质量', value: '0'},
+          {name: '安全', value: '1', checked: true}
       ],
       checkboxItems: [
           {name: 'standard is dealt for u.', value: '0', checked: true},
