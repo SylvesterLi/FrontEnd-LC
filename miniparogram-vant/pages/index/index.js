@@ -4,7 +4,26 @@ Page({
    * 页面的初始数据
    */
   data: {
+    activeNames: ['0'],
+    radio:'0',
+    message:''
     
+  },
+
+  onCollapseChange(event) {
+    this.setData({
+      activeNames: event.detail
+    });
+  },
+
+
+
+  onRadioClick(event) {
+    const  { value }  = event.currentTarget.dataset;
+    console.log(value);
+    this.setData({
+      radio: value
+    });
   },
 
   /**
@@ -12,6 +31,7 @@ Page({
    */
   onLoad: function (options) {
     
+      
   },
 
   /**
