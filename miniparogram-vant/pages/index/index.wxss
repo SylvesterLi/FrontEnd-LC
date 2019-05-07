@@ -1,0 +1,7 @@
+.maincss{
+    display: flex;
+    margin-left: 50rpx;
+    margin: 50rpx;
+
+
+}

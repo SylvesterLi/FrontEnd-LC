@@ -71,11 +71,11 @@
         border="{{ false }}"
         clearable
         required />
-    </van-cell-group>
+    </van-cell-group >
   </view>
 
   <view >
-    <van-cell-group border>
+    <van-cell-group border class="maincss">
 
       <van-radio checked name="1">自查问题</van-radio>
       <van-field
